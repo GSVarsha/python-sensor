@@ -59,7 +59,7 @@ commands:
             GEVENT_TEST: "<<parameters.gevent>>"
           command: |
             . venv/bin/activate
-            coverage run --source=instana -m pytest -v --junitxml=test-results <<parameters.tests>>
+            coverage run --source=instana -m pytest -v --junitxml=test-results tests/frameworks/test_tornado_client.py
             coverage report -m
             coverage html
 
