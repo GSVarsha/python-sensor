@@ -7,7 +7,7 @@ Django>=4.2.2
 fastapi>=0.92.0
 flask>=2.3.2
 grpcio>=1.37.1
-google-cloud-pubsub<=2.1.0
+google-cloud-pubsub<=2.18.1
 google-cloud-storage>=1.24.0
 lxml>=4.9.2
 mock>=4.0.3
@@ -24,7 +24,7 @@ pika>=1.2.0
 # On 4.0.0 we currently get:
 # AttributeError: module 'google._upb._message' has no attribute 'Message'
 # TODO: Remove this when support for 4.0.0 is done
-protobuf<4.0.0
+protobuf<5.0.0
 
 pymongo>=3.11.4
 pyramid>=2.0.1
@@ -32,10 +32,10 @@ pytest>=6.2.4
 pytest-celery
 redis>=3.5.3
 requests-mock
-responses<=0.17.0
-sanic==21.6.2
+responses<=0.23.3
+sanic==23.6.0
 sqlalchemy>=2.0.0
 spyne>=2.14.0
-tornado>=4.5.3,<6.0
+tornado>=4.5.3,<7.0
 uvicorn>=0.13.4
-urllib3[secure]<1.27,>=1.26.5
+urllib3[secure]>=1.26.5,<2.1
