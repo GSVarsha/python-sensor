@@ -9,16 +9,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-      time: "11:39"
-    groups:
-      python-packages:
-        patterns:
-          - "*"
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/tests" # Location of package manifests
-    schedule:
-      interval: "daily"
-      time: "11:39"
+      time: "11:50"
     groups:
       python-packages:
         patterns:
