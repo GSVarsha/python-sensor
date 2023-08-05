@@ -9,7 +9,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-      time: "11:50"
+      time: "12:03"
     groups:
       python-packages:
         patterns:
