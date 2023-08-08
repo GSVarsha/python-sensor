@@ -6,10 +6,10 @@
 version: 2
 updates:
   - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directory: "/test-requirements" # Location of package manifests
     schedule:
       interval: "daily"
-      time: "12:03"
+      time: "18:30"
     groups:
       python-packages:
         patterns:
