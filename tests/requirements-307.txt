@@ -9,7 +9,7 @@ boto3>=1.17.74
 # [1] https://github.com/python/importlib_metadata/pull/405
 # [2] https://github.com/celery/celery/issues/7783
 celery>=5.2.7
-importlib-metadata<5.0.0
+importlib-metadata<7.0.0
 
 coverage>=5.5
 Django>=3.2.19
@@ -41,7 +41,7 @@ pytest>=6.2.4
 pytest-celery
 redis>=3.5.3
 requests-mock
-responses<=0.17.0
+responses<=0.23.3
 sanic==21.6.2
 sqlalchemy>=2.0.0
 spyne>=2.14.0
