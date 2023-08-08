@@ -6,7 +6,7 @@
 version: 2
 updates:
   - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/test-requirements" # Location of package manifests
+    directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
       time: "18:30"
@@ -14,3 +14,19 @@ updates:
       python-packages:
         patterns:
           - "*"
+    ignore:
+      - dependency-name: "tornado"
+      # The tornado issue partially recorded in the Kanbanize ticket:
+      # https://instana.kanbanize.com/ctrl_board/197/cards/135147/details/, and there is an AHA Idea about it.
+      - dependency-name: "google-cloud-pubsub"
+      # google-cloud-pubsub (Collecting google-cloud-pubsub<=2.1.0 (from -r tests/requirements-310.txt (line 11)))
+      - dependency-name: "sanic"
+      # The lagging of the Sanic version is a known issue for at least a year, the oldest ticket is on the archived board:
+      # https://instana.kanbanize.com/ctrl_board/49/cards/102939/details/
+      # which is referenced from a ticket on our current board:
+      # https://instana.kanbanize.com/ctrl_board/197/cards/109698/details/
+      - dependency-name: "urllib3"
+      # urllib3 (Collecting urllib3<1.27,>=1.26.5 (from instana==2.0.5->-r requirements.txt (line 2)))
+      - dependency-name: "couchbase"
+      - dependency-name: "protobuf"
+      
