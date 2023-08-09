@@ -4,7 +4,7 @@
 # Flask <= 2.3.2
 # Pyramid <= 2.0.1
 # Sanic <= 21.6.2
-Starlette <0.28.0,>=0.27.0
+Starlette >=0.27.0,<0.32.0
 # Tornado <= 6.2
 # Aiohttp <= 3.8.5
 # Boto3 <= 1.28.20
