@@ -14,7 +14,7 @@ updates:
       python-packages:
         patterns:
           - "*"
-    versioning-strategy: widen
+    versioning-strategy: increase
     ignore:
       - dependency-name: "tornado"
       # The tornado issue partially recorded in the Kanbanize ticket:
