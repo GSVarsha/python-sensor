@@ -14,7 +14,7 @@ updates:
       python-packages:
         patterns:
           - "*"
-    versioning-strategy: increase
+    versioning-strategy: widen
     ignore:
       - dependency-name: "tornado"
       # The tornado issue partially recorded in the Kanbanize ticket:
@@ -28,7 +28,9 @@ updates:
       # https://instana.kanbanize.com/ctrl_board/197/cards/109698/details/
       - dependency-name: "urllib3"
       # urllib3 (Collecting urllib3<1.27,>=1.26.5 (from instana==2.0.5->-r requirements.txt (line 2)))
-      - dependency-name: "couchbase"
+      - dependency-name: "starlette"
+      # starlette (Collecting starlette<0.28.0,>=0.27.0 (from fastapi>=0.92.0->-r tests/requirements-310.txt (line 7))
+      #- dependency-name: "couchbase"
       - dependency-name: "protobuf"
       - dependency-name: "importlib-metadata"
       # fails for python-3.7
